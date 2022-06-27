@@ -8,6 +8,6 @@ def home(request):
         'name': 'Matheus Sobreira'})
 
 
-def recipe(request):
-    return render(request, 'recipes/pages/home.html', context={
+def recipe(request, id):
+    return render(request, 'recipes/pages/recipe-view.html', context={
         'name': 'Matheus Sobreira'})
